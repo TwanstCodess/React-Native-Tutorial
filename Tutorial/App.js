@@ -1,11 +1,25 @@
 import { StatusBar } from 'expo-status-bar';
-import {  View ,Text} from 'react-native';
+import {  View ,Text,Image, ImageBackground} from 'react-native';
+const Imagest=require("./assets/favicon.png");
 
 export default function App() {
   return (
     <View style={{flex:1,backgroundColor:"plum",alignItems:"center",justifyContent:"center"}}>
 
- <Text style={{fontSize:30,paddingTop:30,marginTop:100,backgroundColor:"white"}}>Hello World IM <Text style={{color:"teal"}}>Twanst Codes</Text> </Text>
+{/* static Image */}
+{/* <Image source={require("./assets/favicon.png")}></Image> */}
+{/* <Image source={Imagest}></Image> */}
+
+
+{/* Network Image */}
+{/* <Image source={{ uri: 'https://picsum.photos/300' }}  style={{ width: 300, height: 300 }} />
+ */}
+
+{/* Image Background */}
+
+{/* <ImageBackground source={{ uri: 'https://picsum.photos/300' }} style={{ width: 300, height: 300 }}>
+<Text>Image Background</Text>
+</ImageBackground> */}
 
     </View>
   );
