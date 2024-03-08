@@ -1,27 +1,21 @@
 import { StatusBar } from 'expo-status-bar';
-import {  View ,Text,Image, ImageBackground} from 'react-native';
+import {  View ,Text,Image, ImageBackground,ScrollView} from 'react-native';
 const Imagest=require("./assets/favicon.png");
 
 export default function App() {
   return (
-    <View style={{flex:1,backgroundColor:"plum",alignItems:"center",justifyContent:"center"}}>
+<View style={{flex:1,backgroundColor:"plum",padding:30}}>
+<ScrollView >
 
 {/* static Image */}
-{/* <Image source={require("./assets/favicon.png")}></Image> */}
-{/* <Image source={Imagest}></Image> */}
 
 
-{/* Network Image */}
-{/* <Image source={{ uri: 'https://picsum.photos/300' }}  style={{ width: 300, height: 300 }} />
- */}
+<Image source={{ uri: 'https://picsum.photos/300' }} style={{ width: 300, height: 300 }}>
+  </Image>
+<Text>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. </Text>
 
-{/* Image Background */}
-
-{/* <ImageBackground source={{ uri: 'https://picsum.photos/300' }} style={{ width: 300, height: 300 }}>
-<Text>Image Background</Text>
-</ImageBackground> */}
-
-    </View>
+    </ScrollView>
+</View>
   );
 }
 
