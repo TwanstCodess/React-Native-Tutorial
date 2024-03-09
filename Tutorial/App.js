@@ -29,7 +29,7 @@ presentationStyle='pageSheet'
  
 />
 </View>
-
+{/*  */}
 </Modal>
 </View>
   );
