@@ -7,8 +7,8 @@ export default function App() {
     <View style={styles.container}>
 
       <Greet childers="HI -1" style={{ backgroundColor: 'indigo' }} />
-      <Greet childers="HI -2" style={{ backgroundColor: 'black', flexBasis: 120, flex: 1 }} />
-      <Greet childers="HI -3" style={{ backgroundColor: 'teal', flexBasis: 120, flex: 1 }} />
+      <Greet childers="HI -2" style={{ backgroundColor: 'black', flexGrow: 2 }} />
+      <Greet childers="HI -3" style={{ backgroundColor: 'teal' }} />
       <Greet childers="HI -4" style={{ backgroundColor: 'tomato' }} />
       <Greet childers="HI-5" style={{ backgroundColor: 'yellow' }} />
       <Greet childers="HI-6" style={{ backgroundColor: 'pink' }} />
@@ -22,7 +22,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: 'plum',
     marginTop: 40,
-    marginBottom: 40,
     borderWidth: 5,
     borderColor: 'gray',
   }
