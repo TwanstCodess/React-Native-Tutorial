@@ -5,11 +5,11 @@ export default function App() {
     <View style={styles.container}>
 
 
-      <View style={[styles.lightBlue, styles.Box]}>
+      <View style={[styles.lightBlue, styles.Box, styles.BoxShadow]}>
         <Text style={styles.Title}>Hello World Im Twanst </Text>
       </View>
 
-      <View style={[styles.lightgreen, styles.Box]}>
+      <View style={[styles.lightgreen, styles.Box, styles.androitShadowd]}>
         <Text style={styles.Title}>Hello World Im Twanst </Text>
       </View>
 
@@ -22,8 +22,8 @@ const styles = StyleSheet.create({
 
   container: { flex: 1, backgroundColor: "plum", padding: 60 },
   Box: {
-    height: 100,
-    width: 100,
+    height: 250,
+    width: 250,
     paddingHorizontal: 10,
     paddingVertical: 20,
     marginVertical: 10,
@@ -48,4 +48,17 @@ const styles = StyleSheet.create({
     backgroundColor: "black",
 
   },
+  BoxShadow: {
+    shadowColor: "#333333",
+    shadowOffset: {
+      width: 1,
+      height: 3,
+    },
+    shadowOpacity: .6,
+    shadowRadius: 10,
+
+  },
+  androitShadowd: {
+    elevation: 20,
+  }
 });
