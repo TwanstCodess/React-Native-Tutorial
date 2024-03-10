@@ -12,7 +12,9 @@ export default function Greet({ childers, style }) {
 const styles = StyleSheet.create({
   Box: {
     backgroundColor: "#fff",
-    padding: 20
+    padding: 20,
+    width: 50,
+    height: 50
   },
   Texts: {
     fontSize: 20,
