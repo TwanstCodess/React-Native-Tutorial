@@ -6,7 +6,7 @@ export default function App() {
   return (
     <View style={styles.container}>
 
-      <Greet childers="HI -1" style={{ backgroundColor: 'indigo' }} />
+      <Greet childers="HI -1" style={{ backgroundColor: 'indigo', paddingVertical: 100 }} />
       <Greet childers="HI -2" style={{ backgroundColor: 'black' }} />
       <Greet childers="HI -3" style={{ backgroundColor: 'teal' }} />
       {/* <Greet childers="HI -4" style={{ backgroundColor: 'tomato' }} />
@@ -25,7 +25,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'flex-end',
+    flexDirection: 'row',
+    alignItems: 'baseline',
     backgroundColor: 'plum',
     marginTop: 40,
     marginBottom: 40,
