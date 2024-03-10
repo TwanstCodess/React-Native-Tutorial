@@ -1,28 +1,34 @@
-import Greet from './components/Greet';
-import { View, Text, Image, ImageBackground, ScrollView, Button, Pressable, Modal, StatusBar, ActivityIndicator, Alert, styleSheet, StyleSheet } from 'react-native';
+import React from 'react';
+import { View, StyleSheet, Dimensions, Text } from 'react-native';
 
 export default function App() {
 
   return (
     <View style={styles.container}>
-
-      <Greet childers="HI-1" style={{ backgroundColor: 'indigo', top: 440, left: 140 }} />
-      <Greet childers="HI-1" style={{ backgroundColor: 'black' }} />
-      <Greet childers="HI-1" style={{ backgroundColor: 'teal' }} />
-      <Greet childers="HI-1" style={{ backgroundColor: 'tomato' }} />
-      <Greet childers="HI-1" style={{ backgroundColor: 'yellow' }} />
-      <Greet childers="HI-1" style={{ backgroundColor: 'pink', top: 110, left: 140, postion: 'absolute' }} />
-      <Greet childers="HI-1" style={{ backgroundColor: 'purple' }} />
+      <View style={styles.box}>
+        <Text style={styles.text}>Welcome To Tutorial</Text>
+      </View>
     </View>
   );
-}
+};
 
+const windowWidth = Dimensions.get('window').width;
+const windowHeight = Dimensions.get('window').height;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'flex-start',
-    marginTop: 40,
-    borderWidth: 5,
-    borderColor: 'gray',
-  }
+    backgroundColor: 'lightblue',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  box: {
+    width: windowWidth > 500 ? "70%" : "90%", // Remove percent symbols
+    height: windowHeight > 600 ? "60%" : "90%", // Remove percent symbols
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  text: {
+    fontSize: windowHeight > 500 ? 50 : 24,
+  },
 });
