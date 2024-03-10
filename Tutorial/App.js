@@ -4,6 +4,13 @@ export default function App() {
   return (
     <View style={styles.container}>
 
+      <View style={styles.dark}>
+        <Text style={styles.darkText}>Hello World
+          <Text style={styles.darkTextBold}>Hello World
+          </Text>
+
+        </Text>
+      </View>
 
       <View style={[styles.lightBlue, styles.Box, styles.BoxShadow]}>
         <Text style={styles.Title}>Hello World Im Twanst </Text>
@@ -19,7 +26,19 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
+  dark: {
+    backgroundColor: "black",
+    height: 30,
+    justifyContent: "center",
+    alignItems: "center",
 
+  },
+  darkText: {
+    color: "white",
+  },
+  darkTextBold: {
+    fontWeight: "bold"
+  },
   container: { flex: 1, backgroundColor: "plum", padding: 60 },
   Box: {
     height: 250,
