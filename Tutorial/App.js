@@ -1,38 +1,30 @@
 import React from 'react';
-import { View, StyleSheet, Dimensions, Text } from 'react-native';
+import { View, StyleSheet, Text, SafeAreaView } from 'react-native';
 
 export default function App() {
 
   return (
-    <View style={styles.container}>
-      <View style={styles.box}>
-        <Text style={styles.text}>Welcome To Tutorial</Text>
+    <SafeAreaView style={styles.SafyAreaContainer}>
+      <View style={styles.container}>
+        <View style={styles.box}>
+          <Text style={styles.text}>Welcome To Tutorial</Text>
+        </View>
       </View>
-    </View>
+    </SafeAreaView>
   );
 };
 
-const windowWidth = Dimensions.get('window').width;
-const windowHeight = Dimensions.get('window').height;
-console.log({
-  windowWidth,
-  windowHeight
-});
+
 const styles = StyleSheet.create({
+  SafyAreaContainer: {
+    flex: 1,
+    backgroundColor: 'lightblue',
+  },
   container: {
     flex: 1,
     backgroundColor: 'lightblue',
     alignItems: 'center',
     justifyContent: 'center',
   },
-  box: {
-    width: windowWidth > 500 ? "70%" : "90%", // Remove percent symbols
-    height: windowHeight > 600 ? "60%" : "90%", // Remove percent symbols
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  text: {
-    fontSize: windowHeight > 500 ? 50 : 24,
-  },
+
 });
